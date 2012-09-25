@@ -1,0 +1,14 @@
+[user]
+	name = Jack River
+	email = ritksm@gmail.com
+[core]
+	editor = /usr/bin/vim
+
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log -p
+	graph = log --graph
