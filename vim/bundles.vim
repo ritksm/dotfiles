@@ -1,10 +1,18 @@
-" Disable compatible
+" disable compatible
 set nocompatible
 
-" Enable filetype detection
+" enable filetype detection
 filetype off
 
-" Set up vundle
+" set up vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
+
+" bundles {{{
+
+" color scheme
+Bundle 'altercation/vim-colors-solarized'
+
+
+" }}}
