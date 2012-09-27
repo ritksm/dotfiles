@@ -6,7 +6,7 @@ current_dir=`pwd`
 # TODO:test if exists first
 unlink ~/.vimrc
 unlink ~/.vim/bundles.vim
-unlink ~/.vim/bundle
+rm -rf ~/.vim/bundle
 unlink ~/.gitconfig
 rm -f ~/.bashrc && unlink ~/.bashrc
 rm -f ~/.bash_aliases && unlink ~/.bash_aliases
@@ -18,7 +18,8 @@ ln -s $current_dir/git/gitconfig ~/.gitconfig
 ln -s $current_dir/vim/vimrc ~/.vimrc
 mkdir ~/.vim/ -p
 ln -s $current_dir/vim/bundles.vim ~/.vim/bundles.vim
-ln -s $current_dir/vim/bundle ~/.vim/bundle
+git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle/
+vim +BundleInstall +qall
 mkdir ~/.tmp/ -p # make tmp directory for vim temp files
 
 # link bash config
