@@ -11,8 +11,9 @@ Bundle 'gmarik/vundle'
 
 " bundles {{{
 
-" color scheme
+" color schemes
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'tomasr/molokai'
 
 
 " }}}

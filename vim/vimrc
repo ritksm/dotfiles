@@ -11,12 +11,13 @@ syntax enable
 syntax on
 
 " set color scheme
-colorscheme solarized
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
+"colorscheme solarized
+"if has('gui_running')
+"    set background=light
+"else
+"    set background=dark
+"endif
+colorscheme molokai
 
 " highlight current line
 "au WinLeave * set nocursorline nocursorcolumn
