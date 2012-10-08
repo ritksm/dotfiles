@@ -10,9 +10,9 @@ function cleanfile
     then
         if [ -L "$file" ]
         then
-            unlink $file && echo "$file unlinked"
+            unlink $file
         else
-            rm -rf $file && echo "$file removed"
+            rm -rf $file
         fi
     fi
 }
