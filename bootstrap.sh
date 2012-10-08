@@ -18,13 +18,13 @@ function cleanfile
 }
 
 # clean first
-# TODO:test if exists first
 # vim
 cleanfile ~/.vimrc
 cleanfile ~/.vim/template
 cleanfile ~/.vim/templates.vim
 cleanfile ~/.vim/bundles.vim
-cleanfile  ~/.vim/bundle
+cleanfile ~/.vim/bundle
+cleanfile ~/.vim/pluginconfig.vim
 # git
 cleanfile ~/.gitconfig
 # bash
@@ -46,6 +46,8 @@ ln -s $current_dir/vim/templates.vim ~/.vim/templates.vim
 ln -s $current_dir/vim/bundles.vim ~/.vim/bundles.vim
 git clone git://github.com/gmarik/vundle.git ~/.vim/bundle/vundle/
 vim +BundleInstall +qall
+# plugin config
+ln -s $current_dir/vim/pluginconfig.vim ~/.vim/pluginconfig.vim
 # vim backup file
 mkdir ~/.tmp/ -p # make tmp directory for vim temp files
 
