@@ -30,9 +30,11 @@ cleanfile ~/.gitconfig
 # bash
 cleanfile ~/.bashrc
 cleanfile ~/.bash_aliases
+cleanfile ~/.bash_logout
 
 
 
+# start linking config
 # git config
 ln -s $current_dir/git/gitconfig ~/.gitconfig
 
@@ -55,3 +57,5 @@ mkdir ~/.tmp/ -p # make tmp directory for vim temp files
 ln -s $current_dir/bash/bashrc ~/.bashrc
 # bash aliases
 ln -s $current_dir/bash/bash_aliases ~/.bash_aliases
+# bash logout
+ln -s $current_dir/bash/bash_logout ~/.bash_logout
