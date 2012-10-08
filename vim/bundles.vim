@@ -57,6 +57,7 @@ Bundle '2072/PHP-Indenting-for-VIm'
 Bundle 'tpope/vim-rails'
 Bundle 'beyondwords/vim-jinja2'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'voithos/vim-python-syntax'
 
 " web front end
 Bundle 'othree/html5.vim'
