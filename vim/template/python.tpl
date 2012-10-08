@@ -19,3 +19,6 @@ __version__ = "0.0.1"
 
 if __name__ == "__main__":
     pass
+
+
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

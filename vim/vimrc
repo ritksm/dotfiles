@@ -96,7 +96,7 @@ nnoremap tonly :tabonly<CR>
 
 " window shortcuts
 nnoremap wh <c-w>h
-nnoremap wh <c-w>h
+nnoremap wl <c-w>l
 nnoremap wj <c-w>j
 nnoremap wk <c-w>k
 nnoremap wn :new<CR>
