@@ -58,6 +58,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'beyondwords/vim-jinja2'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'voithos/vim-python-syntax'
+Bundle 'tmhedberg/SimpylFold'
 
 " web front end
 Bundle 'othree/html5.vim'
@@ -76,6 +77,7 @@ Bundle 'tpope/vim-endwise'
 
 " Scheme
 Bundle 'kien/rainbow_parentheses.vim'
+
 
 filetype plugin indent on     " required!
 

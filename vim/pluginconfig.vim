@@ -78,3 +78,6 @@ nmap <F3> :GundoToggle<cr>
 nmap <F4> :IndentGuidesToggle<cr>
 nnoremap <leader>a :Ack
 nnoremap <leader>v V`]
+
+" SimpylFold
+let g:SimpylFold_docstring_preview = 1 "enable previewing of docstrings in the fold text
