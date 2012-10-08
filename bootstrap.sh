@@ -2,19 +2,36 @@
 
 current_dir=`pwd`
 
+function cleanfile
+{
+    file=$1
+
+    if [ -e "$file" ]
+    then
+        if [ -L "$file" ]
+        then
+            unlink $file && echo "$file unlinked"
+        else
+            rm -rf $file && echo "$file removed"
+        fi
+    fi
+}
+
 # clean first
 # TODO:test if exists first
 # vim
-unlink ~/.vimrc
-rm -rf ~/.vim/template
-unlink ~/.vim/templates.vim
-unlink ~/.vim/bundles.vim
-rm -rf ~/.vim/bundle
+cleanfile ~/.vimrc
+cleanfile ~/.vim/template
+cleanfile ~/.vim/templates.vim
+cleanfile ~/.vim/bundles.vim
+cleanfile  ~/.vim/bundle
 # git
-unlink ~/.gitconfig
+cleanfile ~/.gitconfig
 # bash
-rm -f ~/.bashrc && unlink ~/.bashrc
-rm -f ~/.bash_aliases && unlink ~/.bash_aliases
+cleanfile ~/.bashrc
+cleanfile ~/.bash_aliases
+
+
 
 # git config
 ln -s $current_dir/git/gitconfig ~/.gitconfig
