@@ -95,14 +95,14 @@ nnoremap tc :tabclose<CR>
 nnoremap tonly :tabonly<CR>
 
 " window shortcuts
-nnoremap wh <c-w>h
-nnoremap wl <c-w>l
-nnoremap wj <c-w>j
-nnoremap wk <c-w>k
-nnoremap wn :new<CR>
-nnoremap wvn :vnew<CR>
-nnoremap wc :close<CR>
-nnoremap wonly :only<CR>
+nnoremap <s-w>h <c-w>h
+nnoremap <s-w>l <c-w>l
+nnoremap <s-w>j <c-w>j
+nnoremap <s-w>k <c-w>k
+nnoremap <s-w>n :new<CR>
+nnoremap <s-w>vn :vnew<CR>
+nnoremap <s-w>c :close<CR>
+nnoremap <s-w>only :only<CR>
 
 " tabbar
 let g:Tb_MaxSize = 2
