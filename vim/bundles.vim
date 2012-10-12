@@ -49,6 +49,12 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
 
+
+"----------------------------------------
+" IDE features 
+"----------------------------------------
+Bundle 'tpope/vim-fugitive'
+
 "----------------------------------------
 " Syntax/Indent for language enhancement
 "----------------------------------------
