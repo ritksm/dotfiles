@@ -31,6 +31,9 @@ cleanfile ~/.gitconfig
 cleanfile ~/.bashrc
 cleanfile ~/.bash_aliases
 cleanfile ~/.bash_logout
+#zsh
+cleanfile ~/.zshrc
+cleanfile ~/.oh-my-zsh
 
 
 
@@ -59,3 +62,8 @@ ln -s $current_dir/bash/bashrc ~/.bashrc
 ln -s $current_dir/bash/bash_aliases ~/.bash_aliases
 # bash logout
 ln -s $current_dir/bash/bash_logout ~/.bash_logout
+
+
+# zsh config
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
