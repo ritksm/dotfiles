@@ -54,6 +54,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 " IDE features 
 "----------------------------------------
 Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/syntastic'
 
 "----------------------------------------
 " Syntax/Indent for language enhancement
