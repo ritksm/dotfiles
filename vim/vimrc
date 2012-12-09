@@ -119,3 +119,5 @@ hi Tb_VisibleChanged guifg=green ctermbg=252 ctermfg=white
 :command Q q
 :command Qa qa
 :command QA qa
+
+set enc=utf8

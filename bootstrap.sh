@@ -8,12 +8,11 @@ function cleanfile
 
     if [ -e "$file" ]
     then
-        if [ -L "$file" ]
-        then
-            unlink $file
-        else
-            rm -rf $file
-        fi
+        rm -rf $file
+    fi
+    if [ -h "$file" ]
+    then
+        unlink $file
     fi
 }
 
@@ -43,7 +42,7 @@ ln -s $current_dir/git/gitconfig ~/.gitconfig
 
 # vim config
 ln -s $current_dir/vim/vimrc ~/.vimrc
-mkdir ~/.vim/ -p
+mkdir -p ~/.vim/
 # template
 ln -s $current_dir/vim/template ~/.vim/template
 ln -s $current_dir/vim/templates.vim ~/.vim/templates.vim
@@ -54,7 +53,7 @@ vim +BundleInstall +qall
 # plugin config
 ln -s $current_dir/vim/pluginconfig.vim ~/.vim/pluginconfig.vim
 # vim backup file
-mkdir ~/.tmp/ -p # make tmp directory for vim temp files
+mkdir -p ~/.tmp/ # make tmp directory for vim temp files
 
 # bash config
 ln -s $current_dir/bash/bashrc ~/.bashrc
